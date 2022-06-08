@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen";
+}
+
+.button{
+    display: inline-block;
+    padding: .9em 2.5em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.button:hover{
+    background: #37a0a0;
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.top-header{
+    text-align: center;
+}
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    background: #612674;
+    text-align: center;
+}
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+.top-nav a:hover{
+    background: #7c3792;
+}
+
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+}
+
+.top-content-title{
+    color: #612674;
+    font-size: 1.375em; /* 22 / 16 */
+    margin: 1.375em;
+}
+
+.top-content-subtitle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.middle-content{
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+.middle-content p{
+    line-height: 1.5;
+    color: #222;
+}
+
+.middle-content-title{
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.middle-content span[class^=icon]{
+    font-size: 3.5em;
+    color: #652e78;
+}
+
+.main-content{
+    padding: 2em;
+}
+
+.main-content p{
+    line-height: 1.2;
+}
+
+.main-content-article{
+    margin-bottom: 3.5em;
+}
+.main-content-title{
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.footer{
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer-menushare{
+    background: #303d4c;
+    padding: .5em;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menushare a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 48.75em) {
+
+    .icon-play{
+        display: block;
+    }
+
+    .top-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .top-nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        gap: 20px;    
+    }
+
+    .top-nav{
+        background: transparent;
+    }
+
+    .top-nav a{
+        color: #612674;
+        font-weight: bold;
+    }
+
+    .top-nav a:hover{
+        background: #612674;
+        color: white;
+    }   
+
+    .top-content{
+        background-color: #612674;
+        color: white;
+    }
+    .top-content-title, .top-content-subtitle{
+        color: white;
+    }
+
+    .middle-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-auto-rows: minmax(50px, auto);
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-auto-rows: minmax(50px, auto); 
+    }
+    
+}
+
+@media screen and (min-width: 62.5em){/* 1000 / 16*/
+
+    .top-content{
+        background: #521a66 url(../images/bg_topo_1198x670.jpg);
+        height: 20em;
+        padding-top: 15em;
+        
+    }
+
+    .middle-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr;  
+    }
+}
+
+@media screen and (min-width: 74em){
+
+    .top-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 30em;
+    }
+
+    .top-content{
+         background-image: url(../images/bg_topo_1600x1374.jpg);
+         padding: 19em 17em 10em;
+         background-position: center top;
+    }
+
+    .icon-play{
+        height: 7em;
+    }
+}
+
+
+
+
+
+
